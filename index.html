@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="logo__box wow fadeInDown" data-wow-duration="1s">
+          <a class="logo__link" href="" ><img class="logo__img" src="images/Group 56.svg" alt=""></a>
+        </div>
+        <nav class="nav wow fadeInDown " data-wow-duration="1s">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__item-link" href="#">Каталог</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Акции</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__top-contacts wow fadeInDown" data-wow-duration="1s">
+          <a href="" class="top-contacts__link">+7 (999) 123-45-67</a>
+          <a href="#" class="top-contacts__link"><img class="contacts__link-img" src="images/vk.svg" alt="" ></a>
+          <a href="#" class="top-contacts__link"><img class="contacts__link-img" src="images/inst.svg" alt="" ></a>
+        </div>
+      </div>
+      <div class="adaptive">
+        <div class="header-top-adaptive">
+          <div class="logo-mini"><a class="logo-mini__link" href=""><img class="logo-mini__img" src="images/mini-logo.svg" alt="" ></a></div>
+          <a class="header-top-adaptive__link" href="tel:+79991234567">+7 (999) 123-45-67</a>
+          <a class="header-top-adaptiv__btn"><img class="adaptive-img" src="images/menu-btn.svg" alt="" onclick="showMenu()"></a>
+        </div>
+        <nav   class="nav-adaptive">
+          <ul class="menu-adaptive">
+            <li class="menu__item"><a class="menu__item-link" href="#">Каталог</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Акции</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__content">
+        <div class="content__slider wow fadeInUp">
+          <div class="content__slider-item item1">
+            <p class="slider-item__cost">от 990 ₽</p>
+            <h1 class="slider-item__title slider-item__title1">Конная прогулка</h1>
+            <a class="slider-item__btn" href="#" >Заказать впечатление</a>
+          </div>
+          <div class="content__slider-item item2">
+            <p class="slider-item__cost">3 000 ₽</p>
+            <h1 class="slider-item__title slider-item__title2">Полет на мотопараплане</h1>
+            <a class="slider-item__btn" href="#" >Заказать впечатление</a>
+          </div>
+          <div class="content__slider-item item3">
+            <p class="slider-item__cost">от 3 500 ₽</p>
+            <h1 class="slider-item__title slider-item__title3">Прогулка на  яхте «Чайка»</h1>
+            <a class="slider-item__btn" href="#" >Заказать впечатление</a>
+          </div>
+          <div class="content__slider-item item4">
+            <p class="slider-item__cost">от 3 000 ₽</p>
+            <h1 class="slider-item__title slider-item__title4">Вечер в  куполе</h1>
+            <a class="slider-item__btn" href="#" >Заказать впечатление</a>
+          </div>
+        </div>
+        <div class="benefits">
+          <div class="benefits__item wow fadeInUpBig" data-wow-duration="1s">
+            <img class="benefits__img" src="images/success.svg" alt="" >
+            <p class="benefits__text">Впечатления по цене партнёра</p>
+          </div>
+          <div class="benefits__item wow fadeInUpBig" data-wow-duration="1.5s">
+            <img class="benefits__img" src="images/120+ payment gateways.svg" alt="" >
+            <p class="benefits__text">Бесплатная доставка в день заказа</p>
+          </div>
+          <div class="benefits__item wow fadeInUpBig" data-wow-duration="2s">
+            <img class="benefits__img" src="images/convert9.svg" alt="" >
+            <p class="benefits__text">Бесплатная доставка в день заказа</p>
+          </div>
+          <div class="benefits__item wow fadeInUpBig" data-wow-duration="2.5s">
+            <img class="benefits__img" src="images/Frame.svg" alt="" >
+            <p class="benefits__text">Проверенные партнёры</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="catalog">
+      <div class="container">
+      <h1 class="catalog__title">КАТАЛОГ ВПЕЧАТЛЕНИЙ</h1>
+        <div class="catalog__inner" id="catalog">
+          <div class="catalog__item wow fadeInUpBig" data-wow-duration="1s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/pony.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Конная прогулка</h4>
+            <p class="catalog__cost">от 990 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a  class="catalog__link" onclick="showModal1('modal1', 'modal__content1')">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig catalog__item2" data-wow-duration="1.1s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/2.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Полет на<br>мотопараплане</h4>
+            <p class="catalog__cost">3 000 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a class="catalog__link" onclick="showModal1('modal2', 'modal__content2')">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig" data-wow-duration="1.2s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/3.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle catalog__subtitle3">Полет в аэротрубе</h4>
+            <p class="catalog__cost">от 1 800 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a class="catalog__link" onclick="showModal1('modal3', 'modal__content3')">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig" data-wow-duration="1s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/4.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Вечер в куполе</h4>
+            <p class="catalog__cost">от 3 000 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a class="catalog__link" onclick="showModal1('modal4', 'modal__content4')">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig catalog__item2" data-wow-duration="1.1s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/5.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Прогулка на яхте «Чайка»</h4>
+            <p class="catalog__cost">от 3 500 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a href="" class="catalog__link">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig catalog__item2" data-wow-duration="1.2s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/6.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Велопрогулка с пикником</h4>
+            <p class="catalog__cost">от 3 000 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a href="" class="catalog__link">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig catalog__item2" data-wow-duration="1s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/7.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Драйв на<br> квадроциклах</h4>
+            <p class="catalog__cost">от 1 800 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a href="" class="catalog__link">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig catalog__item2" data-wow-duration="1.2s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/8.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Запись песни<br> в студии</h4>
+            <p class="catalog__cost">от 5 000 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a href="" class="catalog__link">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig catalog__item2" data-wow-duration="1.3s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/9.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Поездка на<br>болотоходах</h4>
+            <p class="catalog__cost">от 3 500 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a href="" class="catalog__link">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig catalog__item2" data-wow-duration="1s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/10.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Виртуальная реальности</h4>
+            <p class="catalog__cost">от 600 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a href="" class="catalog__link">Подробнее</a>
+          </div>
+          <div class="catalog__item wow fadeInUpBig catalog__item2" data-wow-duration="1.1s">
+            <div class="catalog__img-box">
+              <img class="catalog__img" src="images/11.jpg" alt="" >
+            </div>
+            <h4 class="catalog__sutitle">Романтический<br> пикник</h4>
+            <p class="catalog__cost">от 2 500 ₽</p>
+            <button class="catalog__btn">Заказать</button>
+            <a href="" class="catalog__link">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sertificate">
+      <div class="container">
+        <div class="sertificate__inner">
+          <div class="sertificate__img-box wow fadeInLeftBig">
+            <img class="sertificate__img" src="images/sertificate.jpg" alt="" >
+          </div>
+          <div class="sertificate__text-bos wow fadeInRightBig">
+            <h1 class="sertificate__title">Сертификат в дизайнерском конверте</h1>
+            <p class="modal__text text-marker">Электронный сертификат - бесплатный</p>
+            <p class="modal__text text-marker">Сертификат в подарочном конверте - 200р</p>
+            <p class="modal__text text-marker">Срок действия сертификата - 3 месяца</p>
+            <p class="modal__text text-marker">Бесплатная доставка в день заказа</p>
+            <p class="modal__text text-marker">Есть возможность заменить впечатление по сертификату, если подарок не понравится</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sertificate-adaptive">
+      <div class="container">
+        <div class="sertificate__inner">
+          <h1 class="sertificate__title">Сертификат в дизайнерском конверте</h1>
+          <div class="sertificate__img-box">
+            <img class="sertificate__img" src="images/sertificate.jpg" alt="" >
+          </div>
+          <div class="sertificate__text-bos">
+            <p class="modal__text text-marker">Электронный сертификат - бесплатный</p>
+            <p class="modal__text text-marker">Сертификат в подарочном конверте - 200р</p>
+            <p class="modal__text text-marker">Срок действия сертификата - 3 месяца</p>
+            <p class="modal__text text-marker">Бесплатная доставка в день заказа</p>
+            <p class="modal__text text-marker">Есть возможность заменить впечатление по сертификату, если подарок не понравится</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <h1 class="questions__title">Часто задаваемые вопросы</h1>
+        <div class="accordion__inner">
+          <div class="accordion__item wow fadeInUpBig"  data-wow-duration="1s" id="accordion__item1" onclick="showAccordion1('accordion__text1','arrow1')">
+            <h3 class="accordion__title" style="position: relative;">Могу ли я купить сертификат в подарок?<button class="accordion__btn" id="acc-btn1"><img class="accordion__arrow" id="arrow1" src="images/arrow-down.png" alt=""></button></h3>           
+            <p class="accordion__text" id="accordion__text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corrupti, quis minus sint sapiente fugiat soluta cum iusto. Quod rerum porro deleniti corrupti accusantium ipsam exercitationem itaque aliquid quidem unde.
+            Reiciendis magni laudantium quaerat. Magni illo, velit necessitatibus perspiciatis laboriosam corrupti veritatis labore, ipsam odit dicta nesciunt. Omnis perspiciatis nihil in asperiores enim, voluptates consequatur labore, fugiat temporibus, modi reiciendis.
+            Blanditiis, inventore quas. Doloremque accusamus quis voluptates minus incidunt quibusdam aliquid praesentium fuga numquam eveniet magnam, minima dicta iste ipsum vero error necessitatibus soluta maiores ab repellat hic vel ullam?
+            Nemo accusantium impedit esse nisi excepturi? Beatae id soluta accusamus sit consequatur, inventore deleniti provident laudantium quo ducimus aspernatur ipsum dolores impedit sint voluptas explicabo sunt dolor. Dolorem, porro fuga.
+            Rem voluptate, aut doloremque, impedit amet nam deserunt minus asperiores ipsam assumenda aspernatur, sapiente quia dolor reiciendis debitis esse sequi laboriosam repudiandae adipisci? Doloribus est, quod molestias consequatur fugit necessitatibus.
+            Modi accusamus expedita pariatur praesentium reiciendis repellendus illo ab fugiat earum nostrum dolores inventore temporibus suscipit esse mollitia, atque facilis ea optio perferendis delectus reprehenderit laborum consequatur ducimus qui! Impedit!
+            Aspernatur modi quaerat autem animi natus. Adipisci deserunt quod, ad reprehenderit nam ipsum esse. Magni cum corporis perspiciatis sequi eaque ducimus, error, optio ipsum provident neque nihil reprehenderit nam blanditiis.
+            Architecto, ratione ex. Tempora pariatur nam expedita quo delectus enim culpa id tempore et ex quibusdam molestias, minus vel cumque sapiente voluptatum, harum fuga debitis voluptates magni at sint excepturi.
+            Illum cupiditate pariatur doloribus nulla placeat laudantium quae sint quisquam atque unde animi doloremque, corrupti esse eveniet enim qui repellendus quas. Laboriosam vel, molestiae explicabo maiores iste consequatur harum sunt?
+            Nostrum eius eos odio libero! Vitae facere veritatis et ratione possimus cumque! Natus fugiat nesciunt repudiandae nam expedita ipsa quas consequatur, vel a tempore nihil itaque excepturi minus? Nihil, sapiente?</p>
+          </div>
+          <div class="accordion__item wow fadeInUpBig" data-wow-duration="1s" onclick="showAccordion1('accordion__text2','arrow2')">
+            <h3 class="accordion__title">Могу ли я поменять сертификат на другой?<button class="accordion__btn"><img class="accordion__arrow" id="arrow2" src="images/arrow-down.png" alt=""></button></h3>
+            <p class="accordion__text" id="accordion__text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nulla eaque facere vitae? Expedita dolorem quos illo accusantium labore quis fuga officiis, animi ipsa, libero quas exercitationem perferendis neque consectetur.</p>
+          </div>
+          <div class="accordion__item wow fadeInUpBig" data-wow-duration="1s" onclick="showAccordion1('accordion__text3', 'arrow3')">
+            <h3 class="accordion__title">Могу ли я купить сертификат в подарок?<button class="accordion__btn"><img class="accordion__arrow" id="arrow3" src="images/arrow-down.png" alt=""></button></h3>            
+            <p class="accordion__text" id="accordion__text3">Чо покайфу то и делайте</p>
+          </div>
+          <div class="accordion__item wow fadeInUpBig" data-wow-duration="1s" onclick="showAccordion1('accordion__text4', 'arrow4')">
+            <h3 class="accordion__title">Могу ли я поменять сертификат на другой?<button class="accordion__btn"><img class="accordion__arrow" id="arrow4" src="images/arrow-down.png" alt=""></button></h3>
+            <p class="accordion__text" id="accordion__text4">Чо покайфу то и делайте</p>
+          </div>
+          <div class="accordion__item wow fadeInUpBig accordion__item1" data-wow-duration="1s" onclick="showAccordion1('accordion__text5', 'arrow5')">
+            <h3 class="accordion__title">Могу ли я купить сертификат в подарок?<button class="accordion__btn"><img class="accordion__arrow" id="arrow5" src="images/arrow-down.png" alt=""></button></h3>
+            <p class="accordion__text" id="accordion__text5">Чо покайфу то и делайте</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="#"><img class="footer__img" src="images/footer__logo.svg" alt=""></a>
+            <p class="footer__text">Все права защищиены © Дари Душой, 2022 г.</p>
+          </div>
+          <div class="footer__menu">
+            <h6 class="footer__menu-title">Меню</h6>
+            <ul class="footer__list">
+              <li class="footer__menu-item"><a  class="footer__link" href="">Каталог</a></li>
+              <li class="footer__menu-item"><a  class="footer__link" href="">Акции</a></li>
+              <li class="footer__menu-item"><a  class="footer__link" href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <p class="footer__number"><a class="footer__phone" href="">+7 (999) 123-45-67</a></p>
+            <a class="footer__social-link" href=""><img class="footer__social-img" src="images/vk.svg" alt="" ></a>
+            <a class="footer__social-link" href=""><img class="footer__social-img" src="images/inst.svg" alt="" ></a>
+          </div>
+          <div class="footer__questions">
+            <h3 class="footer__social-title">Остались вопросы?</h3>
+            <p class="footer__social-text">Оставьте заявку, мы свяжемся с Вами в ближайшее время</p>
+            <button class="footer__social-btn">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal-form" id="modal-form">
+      <div class="modal__form-body">
+        <a class="close-modal-form" onclick="closeModalForm()"></a>
+        <div class="modal__form-inner">
+          <h3 class="form-inner__title">Отправьте заявку</h3>
+          <p class="form-inner__text">Мы свяжемся с Вами в ближайшее время</p>
+          <form class="form" action="">
+            <input class="input" type="text" placeholder="Имя" name="name">
+            <input class="input" type="tel" placeholder="Телефон" name="phone">
+            <textarea class="text-area" name="" placeholder="Комментарий"></textarea>
+            <label for="checkbox"><input class="checkbox" type="checkbox" id="checkbox"><span>Отправляя заявку Вы соглашаетесь на обработку <a class="person-data" href="#">персональных данных</a></span></label>
+            <button class="form__btn" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal1">
+      <a  class="modal-close1" onclick="closeModal1('modal1', 'modal__content1')"></a>
+      <div class="modal__content modal__content1" id="modal__content1">
+        <a class="modal-close"  onclick="closeModal1('modal1', 'modal__content1')"><img class="modal-close__img" src="images/modal-close.svg" alt="" ></a>
+        <div class="modal__slider-box">
+          <div class="modal__slider-main">
+            <div class="slider-main__img-box"><img class="slider-main__img" src="images/slide-main-konwalk.jpg" alt=""></div>
+            <div class="slider-main__img-box"><img class="slider-main__img" src="images/yahta450.jpg" alt=""></div>
+            <div class="slider-main__img-box"><img class="slider-main__img" src="images/slide-main-konwalk.jpg" alt=""></div>
+          </div>
+          <div class="modal__slider-small">
+            <div class="slider-small__img-box"><img class="slider-small__img" src="images/slider-small-konwalk.jpg" alt=""></div>
+            <div class="slider-small__img-box"><img class="slider-small__img" src="images/yahta130.jpg" alt=""></div>
+            <div class="slider-small__img-box"><img class="slider-small__img" src="images/slider-small-konwalk.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="modal__text-box">
+          <h2 class="modal__title">Конная прогулка</h2>
+          <p class="modal__price">от 990 ₽</p>
+          <button class="modal__btn">Заказать впечатление</button>
+          <h5 class="modal__subtitle">Подробнее о впечатлении:</h5>
+          <p class="modal__text">Конные прогулки подходят как для взрослых, так и для детей от 3 лет.</p>
+          <p class="modal__text text-marker">Для взрослых — гнедые рысаки, выдерживающие до 90 кг</p>
+          <p class="modal__text text-marker">Для детей — милые пони, которые вызывают восторг у малышей</p>
+          <p class="modal__text">Наш инструктор Анастасия познакомит вас с лошадьми, подробно расскажет и покажет особенности общения с этими животными, проведет короткий инструктаж и поможет сесть верхом.</p>
+          <p class="modal__text">Под присмотром инструктора вы сможете погладить лошадь, покормить ее, взять под уздцы и самостоятельно поуправлять во время прогулки.</p>
+          <p class="modal__text">Наши лошади спокойные, уравновешенные и хорошо воспитанные, чтобы даже новички чувствовали себя комфортно.</p>
+          <h5 class="modal__subtitle modal__subtitle1">Варианты прогулок:</h5>
+          <p class="modal__subtext">Стандартная — 30 минут - 990 рублей</p>
+          <p class="modal__subtext">Полноценная — 1 час - 1 500 рублей</p>
+          <p class="modal__subtext">Романтическая прогулка — 1,5 часа - 5 000 руб (на двоих)</p>
+          <p class="modal__subtext">Фотосессия с лошадью или пони — 30 минут - 3 000 руб</p>
+          <p class="modal__subtext">Локация - ипподром за Парком Победы</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal2">
+      <a  class="modal-close1" onclick="closeModal1('modal2', 'modal__content2')"></a>
+      <div class="modal__content modal__content1" id="modal__content2">
+        <a class="modal-close"  onclick="closeModal1('modal2', 'modal__content2')"><img class="modal-close__img" src="images/modal-close.svg" alt="" ></a>
+        <div class="modal__slider-box">
+          <div class="modal__slider-main">
+            <img class="slider-main__img" src="images/motoroplan.jpg" alt="">
+            <img class="slider-main__img" src="images/yahta450.jpg" alt="">
+            <img class="slider-main__img" src="images/drive450.jpg" alt="">
+          </div>
+          <div class="modal__slider-small">
+            <img class="slider-small__img" src="images/motoroplan130.jpg" alt="">
+            <img class="slider-small__img" src="images/yahta130.jpg" alt="">
+            <img class="slider-small__img" src="images/drive130.jpg" alt="">
+          </div>
+        </div>
+        <div class="modal__text-box">
+          <h2 class="modal__title">Полёт на мотопараплане</h2>
+          <p class="modal__price">3000 ₽</p>
+          <button class="modal__btn">Заказать впечатление</button>
+          <h5 class="modal__subtitle">Подробнее о впечатлении:</h5>
+          <p class="modal__text">Людям всегда было свойственно мечтать о небе, стремиться к простору и горизонтам.</p>
+          <p class="modal__text">Мотопараплан позволит исполнить эту мечту и посмотреть на мир с высоты птичьего полёта. Все заботы и неприятности останутся на земле, а вы будете ловить облака, дышать полной грудью и наслаждаться свободой 🔥</p>
+          <p class="modal__text text-marker">Продолжительность полёта - 10 мин </p>
+          <p class="modal__text text-marker">Высота полета — 250 м </p>
+          <p class="modal__text text-marker">Скорость полета — 60 км/ч </p>
+          <p class="modal__text text-marker">Короткий инструктаж по технике безопасности </p>
+          <p class="modal__text text-marker">Защитный шлем со связью с инструктором</p>
+          <p class="modal__text text-marker">Возраст — от 6 лет </p>
+          <p class="modal__text">Полеты проходят совсем рядом с городом — около с. Архангельская Слобода</p>
+          <p class="modal__text">Мотопараплан — самый безопасный вид летательного аппарата. Особая конструкция парашюта позволяет сделать взлет и приземление плавными, а управление полетом легким и безопасным.</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal3">
+      <a  class="modal-close1" onclick="closeModal1('modal3', 'modal__content3')"></a>
+      <div class="modal__content modal__content3" id="modal__content3">
+        <a class="modal-close"  onclick="closeModal1('modal3', 'modal__content3')"><img class="modal-close__img" src="images/modal-close.svg" alt="" ></a>
+        <div class="modal__slider-box">
+          <div class="modal__slider-main">
+            <img class="slider-main__img" src="images/airbus450.jpg" alt="">
+            <img class="slider-main__img" src="images/yahta450.jpg" alt="">
+            <img class="slider-main__img" src="images/airbus450.jpg" alt="">
+          </div>
+          <div class="modal__slider-small">
+            <img class="slider-small__img" src="images/airbus130.jpg" alt="">
+            <img class="slider-small__img" src="images/yahta130.jpg" alt="">
+            <img class="slider-small__img" src="images/airbus130.jpg" alt="">
+          </div>
+        </div>
+        <div class="modal__text-box">
+          <h2 class="modal__title">Полет в аэротрубе</h2>
+          <p class="modal__price">1800 ₽</p>
+          <button class="modal__btn">Заказать впечатление</button>
+          <h5 class="modal__subtitle">Подробнее о впечатлении:</h5>
+          <p class="modal__text">Аэротруба – это тренажер, имитирующий полёт в свободном падении. В ней человек испытывает примерно те же эмоции, что и от прыжка с парашютом.</p>
+          <p class="modal__text">Только в среднем полет в небе длится 60 секунд, а в аэротрубе сможете летать от 3 минут. То есть вы получите тот же восторг, как от прыжка с парашютом, помноженный на три, и при этом абсолютно безопасно.</p>
+          <p class="modal__text">Вам выдадут комбинезон и шлем для полёта.</p>
+          <p class="modal__text">Специальные навыки не требуются – в течение всего полета рядом с вами будет находиться надежный инструктор.</p>
+          <p class="modal__text">Перед полетом вы пройдете специальную подготовку – инструктор объяснит основы движения в воздухе и проинформирует о технике безопасности.</p>
+          <p class="modal__text">Локация - ул. Портовая 25 (перед зданием речного вокзала)</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal4">
+      <a  class="modal-close1" onclick="closeModal1('modal4', 'modal__content4')"></a>
+      <div class="modal__content modal__content3" id="modal__content4">
+        <a class="modal-close"  onclick="closeModal1('modal4', 'modal__content4 ')"><img class="modal-close__img" src="images/modal-close.svg" alt="" ></a>
+        <div class="modal__slider-box">
+          <div class="modal__slider-main">
+            <img class="slider-main__img" src="images/evening460.jpg" alt="">
+            <img class="slider-main__img" src="images/yahta450.jpg" alt="">
+            <img class="slider-main__img" src="images/evening460.jpg" alt="">
+          </div>
+          <div class="modal__slider-small">
+            <img class="slider-small__img" src="images/evening130.jpg" alt="">
+            <img class="slider-small__img" src="images/yahta130.jpg" alt="">
+            <img class="slider-small__img" src="images/evening130.jpg" alt="">
+          </div>
+        </div>
+        <div class="modal__text-box">
+          <h2 class="modal__title">Вечер в куполе</h2>
+          <p class="modal__price">от 3 000 ₽</p>
+          <button class="modal__btn">Заказать впечатление</button>
+          <h5 class="modal__subtitle">Подробнее о впечатлении:</h5>
+          <p class="modal__text">Аэротруба – это тренажер, имитирующий полёт в свободном падении. В ней человек испытывает примерно те же эмоции, что и от прыжка с парашютом.</p>
+          <p class="modal__text">Только в среднем полет в небе длится 60 секунд, а в аэротрубе сможете летать от 3 минут. То есть вы получите тот же восторг, как от прыжка с парашютом, помноженный на три, и при этом абсолютно безопасно.</p>
+          <p class="modal__text">Вам выдадут комбинезон и шлем для полёта.</p>
+          <p class="modal__text">Специальные навыки не требуются – в течение всего полета рядом с вами будет находиться надежный инструктор.</p>
+          <p class="modal__text">Перед полетом вы пройдете специальную подготовку – инструктор объяснит основы движения в воздухе и проинформирует о технике безопасности.</p>
+          <p class="modal__text">Локация - ул. Портовая 25 (перед зданием речного вокзала)</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
